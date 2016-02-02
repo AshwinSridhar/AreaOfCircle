@@ -1,8 +1,5 @@
-function outerFunction(value){
-    function innerFunction(value){
-        return value * value;
-    }
-    alert(innerFunction(value));
-}
+var multiply = ( function(value){
+    return function(value){ return console.log(value *value); }
+})();
 
-outerFunction(10);
+multiply(10);
