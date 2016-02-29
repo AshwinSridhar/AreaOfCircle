@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="application/javascript">
+        var mod = angular.module("myApp",[]);
+        mod.controller("control1",function( $scope ){
+            $scope.clickMe = function(){
+               alert('hi')
+           }
+        });
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="control1">
+    <button ng-click="clickMe()">Click Me</button>
+</body>
+</html>
